@@ -61,28 +61,47 @@ To achieve this goal, the Pyara proposes some activities to:
 
 
 
-
 # References
 
 [1] Khadka, 2016
+
 [2] Wolfart et al., 2021
+
 [3] Wimalasooriya, 2019
+
 [4[ Monaghan and Bass, 2020 
+
 [5] Khalilipour et al., 2021
+
 [6] Nakayama et al., 2021
+
 [7] Abdellatif et al., 2021
+
 [8] Behutiye et al., 2020
+
 [9] Lethbridge et al., 2003
+
 [10] Aghajani et al., 2019
+
 [11] Aghajani et al., 2020
+
 [12] Torres et al., 2019
+
 [13] Bennett and Rajlich, 2000; 
+
 [14] Canfora and Cimitile, 2001;
+
 [15] Ali et al., 2020; 
+
 [16] Sommerville, 2011; 
+
 [17] Koller, 2016; 
+
 [18] Umudova, 2019; 
+
 [19] Χρυσοχοΐδης, 2022
+
 [20] Pérez-Castillo et al., 2011; 
+
 
 
