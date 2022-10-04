@@ -223,45 +223,40 @@ The Peer Review is where other practitioners can evaluate a Solution Plan, and d
 
 # References
 
-[1] Khadka, 2016
+[1] R. Khadka, “Revisiting Legacy Software System Modernization,” Utrecht University, 2016. [Online]. Available: https://dspace.library.uu.nl/handle/1874/330662
+[2] D. Wolfart et al., “Modernizing legacy systems with microservices: A roadmap,” in Evaluation and Assessment in Software Engineering, 2021, pp. 149–159. [Online]. Available: https://dl.acm.org/doi/abs/10.1145/3463274.3463334
+[3] C. Wimalasooriya, “Understanding software maintenance in the context of software architecture evolution.,” University of Canterbury, 2019. Accessed: Sep. 19, 2022. [Online]. Available: https://ir.canterbury.ac.nz/handle/10092/16632
 
-[2] Wolfart et al., 2021
+[4] B. D. Monaghan and J. M. Bass, “Redefining legacy: a technical debt perspective,” 2020, pp. 254–269. [Online]. Available: https://link.springer.com/chapter/10.1007/978-3-030-64148-1_16
 
-[3] Wimalasooriya, 2019
+[5] A. Khalilipour, M. Challenger, M. Onat, H. Gezgen, and G. Kardas, “Refactoring legacy software for layer separation,” International Journal of Software Engineering and Knowledge Engineering, vol. 31, no. 02, pp. 217–247, 2021.
 
-[4[ Monaghan and Bass, 2020 
+[6] M. Nakayama, E. Hustad, and N. Sutcliffe, “Agility and system documentation in large-scale enterprise system projects: a knowledge management perspective,” Procedia Computer Science, vol. 181, pp. 386–393, 2021.
 
-[5] Khalilipour et al., 2021
+[7] M. Abdellatif et al., “A taxonomy of service identification approaches for legacy software systems modernization,” Journal of Systems and Software, vol. 173, p. 110868, 2021.
 
-[6] Nakayama et al., 2021
+[8] W. Behutiye, P. Rodríguez, M. Oivo, S. Aaramaa, J. Partanen, and A. Abhervé, “How agile software development practitioners perceive the need for documenting quality requirements: a multiple case study,” 2020, pp. 93–100. [Online]. Available: https://ieeexplore.ieee.org/abstract/document/9226305
 
-[7] Abdellatif et al., 2021
+[9] T. C. Lethbridge, J. Singer, and A. Forward, “How software engineers use documentation: the state of the practice,” IEEE Software, vol. 20, no. 6, pp. 35–39, Nov. 2003, doi: 10.1109/MS.2003.1241364.
 
-[8] Behutiye et al., 2020
+[10] E. Aghajani et al., “Software documentation issues unveiled,” 2019, pp. 1199–1210. [Online]. Available: https://ieeexplore.ieee.org/abstract/document/8811931
 
-[9] Lethbridge et al., 2003
+[11] E. Aghajani et al., “Software documentation: the practitioners’ perspective,” 2020, pp. 590–601. [Online]. Available: https://ieeexplore.ieee.org/abstract/document/9284065
 
-[10] Aghajani et al., 2019
+[12] V. Torres, M. Gil, and V. Pelechano, “Software Knowledge Representation to Understand Software Systems,” 2019, pp. 137–144. [Online]. Available: https://link.springer.com/chapter/10.1007/978-3-030-35333-9_10
 
-[11] Aghajani et al., 2020
+[13] K. H. Bennett and V. T. Rajlich, “Software maintenance and evolution: a roadmap,” 2000, pp. 73–87. [Online]. Available: https://dl.acm.org/doi/pdf/10.1145/336512.336534
 
-[12] Torres et al., 2019
+[14] G. Canfora and A. Cimitile, “Software maintenance,” in Handbook of Software Engineering and Knowledge Engineering: Volume I: Fundamentals, World Scientific, 2001, pp. 91–120. [Online]. Available: https://www.worldscientific.com/doi/abs/10.1142/9789812389718_0005
 
-[13] Bennett and Rajlich, 2000; 
+[15] M. Ali, S. Hussain, M. Ashraf, and M. K. Paracha, “Addressing Software Related Issues On Legacy Systems–A Review,” International Journal of Scientific & Technology Research, vol. 9, no. 3, pp. 3738–3742, 2020.
 
-[14] Canfora and Cimitile, 2001;
+[16] I. Sommerville, Software engineering, 9th ed. Boston: Pearson, 2011.
 
-[15] Ali et al., 2020; 
+[17] H. G. Koller, “Effects of clean code on understandability: An experiment and analysis,” 2016. [Online]. Available: https://www.duo.uio.no/bitstream/handle/10852/51127/master.pdf
 
-[16] Sommerville, 2011; 
+[18] S. Umudova, “Analysis of software maintenance phases,” Noble International Journal of Scientific Research, vol. 3, no. 6, pp. 62–66, 2019.
 
-[17] Koller, 2016; 
+[19] Ε. Χρυσοχοΐδης, “Personalized developer navigation in software projects aiming at comprehensibility improvement and faster project onboarding,” Πανεπιστήμιο Μακεδονίας, 2022. [Online]. Available: https://dspace.lib.uom.gr/handle/2159/27186
 
-[18] Umudova, 2019; 
-
-[19] Χρυσοχοΐδης, 2022
-
-[20] Pérez-Castillo et al., 2011; 
-
-
-
+[20] R. Pérez-Castillo, I. G.-R. De Guzman, and M. Piattini, “Knowledge Discovery Metamodel-ISO/IEC 19506: A standard to modernize legacy systems,” Computer Standards & Interfaces, vol. 33, no. 6, pp. 519–532, 2011.
