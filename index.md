@@ -224,7 +224,9 @@ The Peer Review is where other practitioners can evaluate a Solution Plan, and d
 # References
 
 [1] R. Khadka, “Revisiting Legacy Software System Modernization,” Utrecht University, 2016. [Online]. Available: https://dspace.library.uu.nl/handle/1874/330662
+
 [2] D. Wolfart et al., “Modernizing legacy systems with microservices: A roadmap,” in Evaluation and Assessment in Software Engineering, 2021, pp. 149–159. [Online]. Available: https://dl.acm.org/doi/abs/10.1145/3463274.3463334
+
 [3] C. Wimalasooriya, “Understanding software maintenance in the context of software architecture evolution.,” University of Canterbury, 2019. Accessed: Sep. 19, 2022. [Online]. Available: https://ir.canterbury.ac.nz/handle/10092/16632
 
 [4] B. D. Monaghan and J. M. Bass, “Redefining legacy: a technical debt perspective,” 2020, pp. 254–269. [Online]. Available: https://link.springer.com/chapter/10.1007/978-3-030-64148-1_16
