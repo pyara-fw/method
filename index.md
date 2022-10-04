@@ -57,7 +57,167 @@ The second aspect may cause a change in the maintenance workflow. It introduces 
 ### How?
 To achieve this goal, the Pyara proposes some activities to: 
 1. Support the software developer in **knowledge acquisition**. 
-2. Stimulate a proper **planning and peer review the changes** before apply them. This may increase the quality of the solution, avoid inject potencial bugs, improve the knowledge about standards adopted by the team, and spread the knowledge about that change among other team members.  
+2. Stimulate a proper **planning and peer review the changes** before apply them. This may increase the quality of the solution, avoid inject potential bugs, improve the knowledge about standards adopted by the team, and spread the knowledge about that change among other team members.  
+
+#### Exploring Knowledge
+
+An approach is to prepare beforehand a centralized index in the corporate intranet, or documentation repository. The idea consists in centralize all common points in a single place, to help practitioners to navigate and have their questions answered as fastest as possible. For sake of this project, let's call this single place as Knowledge base (KB). 
+
+#### Planning of Changes
+
+The planning of changes is done in an iterative manner, performing activities of Solution Design and Impact Analysis. Solution Design consists in describe in details how to solve the problem (or implement the feature implemented) raised on change request. The level of details is defined by the assigned developer in accordance with the company’s standards. The Impact Analysis is where this developer evaluates the impact of the proposed changes, and eventually open new tickets to take care of related issues. This cycle happens until it has a stable change’s design. At this point, this design is presented to some team members, that will evaluate and approve it to go to implementation, or move it back to design with observations.
+
+## Acknowledgements
+This method does not intends to add a heavy burden over software maintenance practitioners. Instead of that, it has the objective to help ensure quality and better knowledge management. As long as a practitioner becomes more familiar with some areas of knowledge, less likely he or she will need to revisit extensively that contents. On the planning changes, I believe this quote applies very well on this context:
+
+    “If I only had an hour to chop down a tree, I would spend the first 45 minutes sharpening my axe.” – Abraham Lincoln.
+
+For this reason, it is important to highlight two points:
+1. There are some advantages in adopting this process. First, with a good planning the chances of success are higher. Adding to that, a verification step allows catch potential issues before it happens. For example, a violation of some standard may be revised and fixed during the design, instead of after implemented. Finally, the fact of someone else verify a design, will help to spread the knowledge about how the system works and how it will work after that change be implemented.   
+2. The process is customizable, and should be adapted to each organization's context. If your team is small and there is no much time, simplify the process. On the other hand, if you have a good structure to support a more formal process, then use it. You will need to calibrate the process implementation to get the best results in your context.  
+
+
+## Exploring Knowledge Process
+
+These activities pre-suppose that there is already a page created specifically to aggregate all this knowledge that will be acquired on this process. Even if there is already documentation available to answer all practitioner's questions in all these knowledge areas, but they are scattered across the organization's pages, it is important to have a central point where will be added all links for relevant sources.  
+
+![Pyara-EK.png](Pyara-EK.png)
+
+
+
+### Activities
+These activities are not sequential, and none of them are mandatory. Also, even if all of them be used, some will run only a couple of times, since the knowledge will be already acquired.
+
+#### Context Comprehension
+This activity focus on comprehend and internalize the knowledge about the domain, organization, customers, and market. Adding to that, which are the terms used on that domain? 
+It is very likely that this activity should happen on first couple of times, since after that most of this knowledge will be internalized already. Also, the business' context should not have lots of changes very often. 
+
+- **Input**
+  - Glossary (if exists)
+  - Diagrams and documents regarding the market, customers, stakeholders, competitors, etc (SWOT, PEST, etc).
+  - Tacit knowledge about business, processes, customers, competitors, etc.(people's informal knowledge via notes, oral descriptions, messages on applications, etc).
+  - Products' descriptions, including their value-proposition statements.
+  - Processes descriptions and details (flowcharts, BPM, etc)
+  - Risks identified 
+  - Any other artifact that may contribute for a better understanding about the domain of the business.
+- **Output**
+  - Personal Knowledge updated 
+  - Knowledge Base
+
+
+#### Architecture Comprehension
+The practitioner needs to understand the architecture of the system. This means, comprehend which components are involved, how they are connected, and who is responsible for what. Adding to that, which technologies (programming language, operational system, 3rd party tools, etc) are in use. Finally, be aware of the non-functional requirements (performance, scalability, security, maintainability, availability, etc), and the acceptance criteria of each one.
+The same way as the business' context, which does not change very often, the same behavior is expected in the architecture. It should not change significantly.
+
+- **Input**
+  - Any documentation regarding the technical architecture.
+  - Components list.
+  - Programming languages used.
+  - Infrastructure diagrams.
+  - Infrastructure-as-a-code (JSON, YAML, diagrams, specifications).
+  - Non-functional requirements description.
+  - Environments (for example: Development, Testing, Staging, Production)
+- **Output**
+  - Personal Knowledge updated 
+  - Knowledge Base
+
+
+#### Software Development Process Comprehension
+On this activity is important to have a deep and comprehensive information regarding the Software Development process. It should cover all activities, since inception to deployment.  
+
+- **Input**
+  - Software Development Process description, workflow, diagrams, etc.
+  - List of tools used (CI/CD, versioning, automated tests)
+  - Coding standards 
+  - Tutorials
+- **Output**
+  - Personal Knowledge updated 
+  - Knowledge Base
+
+#### Application Comprehension
+At this level the knowledge is going to be more detailed, focusing on the software. How is it structured? What I need to know to get the latest version in my workspace? How to test it? How to check it in? How to release it?
+
+- **Input**
+  - Programming language used (including version)
+  - Dependencies (libraries)
+  - 3rd party components list, which are dependencies (database, queue,  in-memory cache, some library from operating system, etc)
+  - Framework (including version)
+  - List of REST endpoints (Swagger style, or simple list)
+  - List of endpoints in other protocols (SOAP, gRPC, etc)
+  - Console utilities list
+  - Tutorials
+  - Credentials for testing
+- **Output**
+  - Personal Knowledge updated 
+  - Knowledge Base
+
+#### Problem Comprehension
+The problem comprehension consists in understand the problem in more details. In case of a bug, which were the cause? Is it reproducible?  
+If it is a new feature, then what led its request? 
+
+This is the only activity that should be performed for each modification on the system. This activity is commonly performed, even if in an informal way.
+But sometimes it may require more research to understand deeper some points, before proceed to designing a solution.  
+
+- **Input**
+  - Ticket with the bug report or feature request
+  - Details about the request
+  - Acceptance criteria
+  - Test cases
+- **Output**
+  - Personal Knowledge updated 
+
+
+## Planning of Changes
+
+Planning of Changes consists in elaborate a description of how to meet the expected outcomes in the Change Request. Furthermore, this includes some steps of analysis to detect eventual dependencies that may be affected by the proposed modification. For this reason there is an iterative sub-process on this process. This sub-process comprehends the activities Solution Design and  Impact Analysis. After reach a stable description of a solution, is time to submit for other peer review your solution. This review may be approved, leading to implementation phase, or rejected, returning the design to be adjusted due to some inconsistencies or even missed scenarios.  
+
+
+![Pyara-PC.png](Pyara-PC.png)
+
+
+
+### Activities
+
+#### Solution Design
+This activity aims to deliver a detailed description of a solution for the Change Request. This "detailed" is defined by the company or team standards and policies. It may be very detailed, including pieces of code, mockups and so on. Or it may be a simple and very high level description. 
+
+- Input
+  - Change Request (CR).
+  - Eventual documents and other artifacts related to the CR.
+  - Knowledge Base
+  - Personal Knowledge
+  - Source code
+- Output
+  - Solution Plan
+
+#### Impact Analysis
+The Impact Analysis consists in gather a list of dependencies of the components related to the Solution Plan. For example, if the component is a particular method of a class (let's call here of "target method" or TM), then the first set of items to be analyzed may be:
+- list of all methods which invoke that TM.
+- list of tests of that TM
+- list of methods invoked from this TM
+
+After get these lists, it is important to iterate them and analyze which ones are really affected (or affect) the TM, and which type of impact is expected with the proposed changes. If there is no impact, then the Solution Plan may be considered stable. Eventually some findings may originate new tickets, to address potential risks or implement other changes, which are out of scope of this CR.
+
+- **Input**
+  - Source code
+  - Solution Plan
+  - Knowledge Base
+  - Personal Knowledge
+- **Output**
+  - Solution Plan
+  - Eventually new tickets
+
+#### Peer Review
+The Peer Review is where other practitioners can evaluate a Solution Plan, and decide if it is good enough to proceed to implementation, or need some adjustments.
+
+- **Input**
+  - Source code
+  - Solution Plan
+  - Knowledge Base
+  - Personal Knowledge
+- **Output**
+  - Solution Plan approved or comments to adjust
+  
 
 
 
